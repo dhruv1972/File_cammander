@@ -1,0 +1,177 @@
+
+
+   
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+    border-bottom:2px solid black;
+     border-top:2px solid black;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px 16px;
+  font-weight: bold;
+  text-decoration: none;
+    border-left: 3px solid red;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: white;}
+
+ul.topnav li a.active {background-color: white;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+    .btn-group .button {
+  background-color: blue; /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 250px;
+  opacity: 1;
+  display: block;
+}
+
+.btn-group .button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+background-color: navy;
+}
+    .btn-group{
+        
+    text-align: center;
+    
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+    border: skyblue solid 20px;
+   font-size: 20px;
+text-shadow: white;
+   font font-weight: bolder;    
+}
+    form{
+        text-shadow: white;
+        text-decoration-color: darkgreen
+        display: block;
+       align-items: center;
+       justify-content: center;
+    }
+
+    input{
+        height: 30px;
+        width: 500px;
+    }
+    
+    .button{
+         border: 1px solid black;
+        
+        
+    }
+    label{
+font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 20px;
+letter-spacing: -0.8px;
+word-spacing: 0.8px;
+color: black;
+font-weight: 700;
+text-decoration: none;
+font-style: italic;
+font-variant: normal;
+text-transform: none;
+    }
+   #hello{
+      border:  1px solid grey;
+       padding-top: 5px;
+       padding-left: 5px;
+       background-color: white;
+       
+    }
+    body{
+  background-image:url(images/bg2.jpg);    
+    }
+    }
+    .right{
+        border-left: 3px solid red;
+    }
+     #hello{
+        border: none;
+/*      border:  1px solid grey;*/
+       padding-top: 5px;
+       padding-left: 5px;
+       background-color: white;
+       border-bottom: 3px solid red;
+       outline: none;
+      
+    }
+     #merge{
+        border: none;
+      font-family: cursive;
+        font-size: 15px;
+        font-weight: bold;
+        border-bottom: 3px solid red;
+       
+    background: none;
+        width: 100px;
+        color: 
+    }
+     #merge:hover {
+  background-color: darkgrey;
+}
+</style>
+</head>
+<body>
+
+<ul class="topnav">
+  
+ <li><img src=logo.jpg height="50px;"></li>
+  <li class="right"><a href="index.html" style="background-color: white"><i class="material-icons">home</i><br>Home</a></li>
+</ul>
+
+<div style="padding:0 16px;">
+   
+    </div> 
+<div class="btn-group">
+    <form action="convget.php" method="post">
+        
+    <br><label name="Source">Source</label><br>
+  <i class="material-icons">note</i> <input type="text"  name="file" id="hello" placeholder="Source" webkitdirectory directory multiple ><br><br>
+        
+     <label name="Destination">Destination</label><br>
+  <i class="material-icons">note</i> <input type="text" name="destination" id="hello" placeholder="Destination"><br><br>
+        
+        <label name="name">File name</label><br>
+  <i class="material-icons">note</i> <input type="text" name="name" id="hello" placeholder="File name"><br><br>
+      
+<br><br>
+ 
+ <i class="material-icons">send</i> <input type="submit" name="merge" value="Merge" id="merge">
+        </form>
+    </div>
+</body>
+</html>

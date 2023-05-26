@@ -1,0 +1,115 @@
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+   /*background-image: url(logo.jpg); */
+       border-bottom:2px solid black;
+     border-top:2px solid black;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding:5px 16px; ;
+  text-decoration: none;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: white;}
+
+ul.topnav li a.active {background-color: white;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+    .btn-group .button {
+  background-color: blue; /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 250px;
+  display: block;
+  opacity: 1;
+  border-radius: 25px;
+}
+
+.btn-group .button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: navy;
+}
+    .btn-group{
+margin-left: 5%;
+margin-top: 10%;
+        
+}
+body{
+  background-image:url(images/bg2.jpg);        
+    }
+  .video{
+    
+    display: block;
+    float: right;
+    border: #096774 solid 15px;
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-right: 5%;
+
+  }
+    .right{
+        border-left: 3px solid red;
+    }
+    script{
+        color: red;
+        font-weight: bold;
+    }
+    
+</style>
+</head>
+<body >
+    <script> alert("Welcome to the conversion world\n Are you Ready?");</script>
+<ul class="topnav">
+    <li><img src=logo.jpg height="50px;"></li>
+ 
+ 
+ <li class="right"><a href="#about" style="background-color: white"><i class="material-icons">home</i><br>Home</a></li>
+</ul>
+
+<div style="padding:0 16px;">
+
+</div>
+
+<div class="video">
+  <img src="images/video.gif" >
+</div>
+
+<div class="btn-group">
+  <button class="button" onclick="document.location='fileconverter.html'">File Converter</button><br>
+  <button class="button" onclick="document.location='pdfeditor.html'">Pdf Editor</button><br>
+  <button class="button" onclick="document.location='securefolder.html'">Secure Folder</button><br>
+  </div>
+</body>
+</html>

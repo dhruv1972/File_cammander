@@ -1,0 +1,115 @@
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+   /*background-image: url(logo.jpg); */
+       border-bottom:2px solid black;
+     border-top:2px solid black;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding:5px 16px; ;
+  text-decoration: none;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: white;}
+
+ul.topnav li a.active {background-color: white;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+    .btn-group .button {
+  background-color: white; /* Green */
+
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 250px;
+  display: block;
+  opacity: 1;
+  border-radius: 25px;
+        font-weight: bold;
+}
+
+.btn-group .button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: white;
+      border: 1px solid green;
+}
+    .btn-group{
+margin-left: 5%;
+margin-top: 10%;
+        
+}
+body{
+/*  background-image:url(images/bg2.jpg);   */
+    background-color: #e7e9f7;
+    }
+  .video{
+    
+    display: block;
+    float: right;
+/*    border: #096774 solid 15px;*/
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-right: 5%;
+
+  }
+    .right{
+        border-left: 3px solid red;
+    }
+   
+    
+</style>
+</head>
+<body >
+   
+<ul class="topnav">
+    <li><img src=logo.jpg height="50px;"></li>
+ 
+ 
+ <li class="right"><a href="index.html" style="background-color: white"><i class="material-icons">home</i><br>Home</a></li>
+</ul>
+
+<div style="padding:0 16px;">
+
+</div>
+
+<div class="video">
+  <img src="pdf.gif" height="500px" >
+</div>
+
+<div class="btn-group">
+  <button class="button" onclick="document.location='merge.html'">Merge File</button><br>
+  <button class="button" onclick="document.location='split.html'">Split File</button><br>
+ 
+  </div>
+</body>
+</html>

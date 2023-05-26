@@ -1,0 +1,67 @@
+<html>
+<head>
+   <style>
+      
+       .pop{
+           color:black;
+           visibility: hidden;
+           border: 2px solid black;
+           align-content: center;
+           justify-content: center;
+           text-align: center;
+           margin-top:   100px;
+           font-family: sans-serif;
+           font-weight: bold;
+           transform: translate(0%,0%) scale(0.1);
+           box-sizing: border-box;
+           transition: transform 0.4s,top 0.4s;
+           margin-left: 25%;
+           margin-right: 25%;
+            
+       }
+       img{
+           height: 100px;
+         border-radius: 50px;
+        margin-top: -50px;;
+       }
+    
+       .open-popup{
+           color: black;
+           visibility: visible;
+            transform: translate(0%,0%) scale(1);
+           top:0;
+       }
+       .pop button{
+           border-radius: 25px;
+           font-family: sans-serif;
+           font-weight: bold;
+       }
+      
+    </style> 
+    </head><body >
+    <button type="submit" onclick="op()" id="open">ok</button>
+   
+    <div class="pop"   id="popup">
+    <img src="tick.png">
+        <p>Sucessfully Converted...</p>
+        <P>Happy Funting</P>
+    <button type="button" onclick="oc()" id="open">ok</button>
+    </div>
+    
+    <script>
+    let popup=document.getElementById("popup")
+    function op(){
+
+        popup.classList.add("open-popup");
+      
+    }
+        function oc(){
+            popup.classList.remove("open-popup");
+        }
+   
+    </script>
+    
+    
+    
+    </body>
+</html>
